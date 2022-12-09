@@ -1,0 +1,21 @@
+### Listar os usuario
+GET https://localhost:5001/api/usuario/listar
+
+### Cadastrar um usuario
+POST https://localhost:5001/api/usuario/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "gab",
+    "nascimento" : "2022-12-08 22:49:36.748"
+}
+
+### Alterar um usuario
+PATCH https://localhost:5001/api/usuario/alterar
+Content-Type: application/json
+
+{
+    "usuarioid" : 10,
+    "nome" : "diogo deconto modificado",
+    "cpf" : "123"
+}
